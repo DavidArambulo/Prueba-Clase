@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.gusto {
+    width: 45%;
+    text-align: center;
+}
+
+.gusto img {
+    width: 100%;
+    border: 25px red solid;
+}
+
+.gusto .gusto-lista {
+    columns: 2;
+}
+
+
+@media screen and (max-width: 320px) {
+    .gusto img {
+        border: 5px red solid;
+    }
+    .gusto {
+        width: 100%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .gusto {
+        width: 23%;
+    }
+}
